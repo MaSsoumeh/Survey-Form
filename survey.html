@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./survey.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main id="main">
+        <header id="title">
+            <h1>
+                Reopening School Survey
+            </h1>
+            <p id="description">your concerns and thoughts about the safety of your children for
+                the upcoming school year during the pandemic.</p>
+        </header>
+        
+        <form id="survey-form" action="#">
+            <div class="main-container">
+               <div class="d1">
+                   <label id="name-label" for="name">Name:</label><input type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="d2">
+                    <label id="lastname-label" for="lastName">Last Name:</label><input type="text" id="lastName" placeholder="Enter Your Last Name" required>
+                </div>
+                <div class="d3">
+                    <label id="email-label" for="email">Parent Email:</label><input type="email" id="email" placeholder="Enter Your Email Address" required>
+                </div>
+                <div class="d4">
+                    <label id="number-label" for="number">Student Age(optional):</label><input type="number" min="7" max="13" id="number" placeholder="Enter The Student Age">
+                </div>
+                <div class="d5">
+                    <label id="Tel-label" for="tel">Telephone Number:</label><input type="tel" id="tel" placeholder="Enter Your Telephone Number">
+                </div>
+                <div class="d6">
+                    <label id="dropdown-label" for="dropdown">Upcoming Year Grade</label>
+                    <select name="Grade" id="dropdown">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="d7">
+                    <fieldset>
+                        <legend>
+                        </legend>
+                        <p>Please rate your level of agreement with the following sentence:<br>
+                            "I am concerned about my children returning in-person learning <br>
+                            for the upcoming semester due to health and safety reasons related to COVID-19."</p>
+                        <div id="radio-div">
+                            <label for="agree"><input type="radio" class="radio" id="agree" name="concern">
+                            Agree</label>
+                            <label for="somewhatAgree"><input type="radio" class="radio" id="somewhatAgree" name="concern">
+                            Somewhat Agree</label>
+                            <label for="somewhatDis"><input type="radio" class="radio" id="somewhatDis" name="concern">
+                            Somewhat Disagree</label>
+                            <label for="disagree"><input type="radio" class="radio" id="disagree" name="concern">
+                            Disagree</label>
+                            <label for="willNot"><input type="radio" class="radio" id="willNot" name="concern">
+                            My children will not return for the upcoming semester.</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="d10">
+                    <div class="chkbox-div">
+                        <p>What are your main concerns about your children Home Learning?</p>
+                        <label for="checkbox1">
+                        <input type="checkbox" name="chkbox" id="checkbox1" value="social">
+                        Social and mental support</label>
+                        <label for="checkbox2">
+                        <input type="checkbox" name="chkbox" id="checkbox2" value="consistency">
+                        Consistency on learning	</label>
+                        <label for="checkbox2">
+                        <input type="checkbox" name="chkbox" id="checkbox3" value="internet">
+                        Internet access	</label>
+                        <label for="checkbox2">
+                        <input type="checkbox" name="chkbox" id="checkbox4" value="device">
+                        Access to technological devices such as tablet or PC</label>
+                    </div>
+                </div>
+                <div class="d8">
+                    <label for="otherComments">Other Considerations</label>
+                    <textarea name="otherComments" id="otherComments" cols="30" rows="10" placeholder="Enter your comments here"></textarea>
+                </div>
+                <div class="d9">
+                    <input type="submit" id="submit" value="submit">
+                </div>
+            </div>
+        </form>
+    
+    </main>
+</body>
+</html>
